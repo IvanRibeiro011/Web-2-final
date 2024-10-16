@@ -1,0 +1,30 @@
+.box-accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-accordion {
+  padding: .4rem 1rem;
+  border-radius: 1rem;
+  background-color: #30DA22; 
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-color: 2px solid rgba(0, 0, 0, 0.582);
+  font-weight: bold;
+  font-size: 0.6rem;
+}
+
+.button-accordion:hover {
+  transition: 0.3s;
+  background-color: #31da2288; 
+}
+
+.accordion-painel {
+  margin: 0.4rem;
+}
+
+.accordion-painel > h2 {
+  margin-bottom: 0.5rem;
+}

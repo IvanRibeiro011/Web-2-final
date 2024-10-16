@@ -1,0 +1,77 @@
+.menu {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .logo {
+    width: 110px;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.menu nav ul li a:hover {
+    transition: .3s;
+    color: #ffffff8a;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar::before {
+    content: "";
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/sherek.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.list-user {
+    background-color: #343A40;
+    padding: 0.5rem 1.2rem;
+    border-radius: 7px;
+}
+
+.list-user li {
+    background-color: #343A40;
+}
+
+.item-user-menu, .item-user-menu a {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    background-color: initial;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    .menu nav ul li {
+        display: none;
+    }
+    
+    .menu nav ul li:last-child {
+        display: block;
+    }
+}

@@ -1,0 +1,149 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register {
+  background-color: #f9f9f9; 
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px; 
+  border-radius: 10px; 
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  box-shadow: 1px 1px 8px rgba(119, 111, 111, 0.904);
+}
+
+.register h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #333; 
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.register form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register form > div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.register form label {
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 0.5rem;
+  color: #555; 
+}
+
+.register form input {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.container-telefone {
+  display: grid !important;
+  grid-template-columns: 1fr min-content;
+  gap: 1.2rem;
+}
+
+.container-button-contact > button {
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  margin-top: 0.7rem;
+  min-width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.container-button-contact > button::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/assets/svgs/add.svg");
+  background-repeat: no-repeat;
+  margin-right: 0.5rem; 
+}
+
+.container-button-contact > .button {
+  color: #1D1B20;
+}
+
+.button {
+  padding: .8rem 2rem;
+  border-radius: 1rem;
+  background-color: #30DA22; 
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #31da2288; 
+}
+
+@media (max-width: 1100px) {
+  .container-telefone {
+      grid-template-columns: 1fr;
+      gap: 0rem;
+  }
+
+  .container-button-contact > button {
+      padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .register {
+      margin: 1rem;
+      padding: 1rem;
+  }
+
+  .register form input, .register form button {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .register h1 {
+      font-size: 1.4rem;
+  }
+
+  .register form > div {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: initial;
+      align-items: start;
+  }
+}
